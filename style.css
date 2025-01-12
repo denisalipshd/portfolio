@@ -1,0 +1,38 @@
+html {
+  scroll-behavior: smooth;
+}
+section {
+  scroll-margin-top: 90px;
+}
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* Animasi untuk scroll ke bawah */
+@keyframes scrollDownAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animasi untuk scroll ke atas */
+@keyframes scrollUpAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Elemen yang diberi animasi */
+.scroll-element {
+  opacity: 0; /* Elemen dimulai dengan tersembunyi */
+  transition: opacity 0.3s ease;
+}
